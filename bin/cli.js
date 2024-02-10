@@ -28,3 +28,5 @@ console.log(
   "Congratulations! You are ready to start developing using this template. Run the following command to start:"
 );
 console.log(`cd ${repoName} && pnpm dev`);
+
+process.exit(0);
