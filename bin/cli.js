@@ -12,8 +12,8 @@ const runCommand = (command) => {
   return true;
 };
 
-const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/codebyalexx/project-template.git`;
+const repoName = process.argv[process.argv.length - 1];
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/codebyalexx/project-template.git ${repoName}`;
 const installDepsCommand = `cd ${repoName} && pnpm install`;
 
 console.log(`Cloning repository in ${repoName}`);
